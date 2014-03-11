@@ -1,0 +1,10 @@
+[	 {
+		"name":"Investigater1", "id":"5", "username":"user5", "password":"changeme"
+	}, {
+		"name":"Hospital1", "id":"6", "username":"user6", "password":"changeme"
+	}, {
+		"name":"Investigater2", "id":"7", "username":"user7", "password":"changeme"
+	}, {
+		"name":"Hospital2", "id":"8", "username":"user8", "password":"changeme"
+	}
+]
