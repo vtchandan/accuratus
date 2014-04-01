@@ -48,16 +48,18 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container-fluid">
-      <a class="brand" href="#">vLine node example</a>
+      
+        <p class="brand">
+          Logged in as <%= ses.user.name %>&nbsp;
+        </p>
+      
 
       <div class="nav-collapse collapse">
-        <p class="navbar-text pull-right">
+        <p class="navbar-text pull-left">
           | <a href="/logout">Log out </a>
         </p>
 
-        <p class="navbar-text pull-right">
-          Logged in as <%= ses.user.name %>&nbsp;
-        </p>
+        
       </div> <!--/.nav-collapse -->
     </div>
   </div>
@@ -73,19 +75,11 @@
          if(usrs!="Hospital"){
       %>
       
-      <div class="well sidebar-nav">
-        <div style="padding:2%; width:96%">
-          <h4>Make Calls</h4>
-
-          <p>Click on any of the online users listed below in order to initiate a call.<br>
-            Users that are online are highlighted in blue.
-          </p>
-        </div>
-      </div>
+      
       
       <div class="well sidebar-nav">
         <ul class="nav nav-list">
-          <li class="nav-header">Registered Users</li>
+          <li class="nav-header">Online Hospitals</li>
           <% for(var i=0; i < users.length; i++){ %>
           <li class="callbutton" data-userid="<%= users[i].id %>"><a href="#"><%= users[i].name %></a></li>
           <% } %>
